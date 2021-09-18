@@ -1,5 +1,5 @@
 install:
-		npm init
+		npm i
 brain-games:
 		node bin/brain-games.js
 publish:
