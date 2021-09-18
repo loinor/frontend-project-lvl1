@@ -34,10 +34,6 @@ make install
 ## Run game
 
 ```sh
-brain-<name game> // brain-calc, brain-progression etc.
-
-or
-
 make brain-<name game> // brain-calc, brain-progression etc.
 ```
 
