@@ -1,5 +1,6 @@
-import getRandomInt from './utils.js';
-import runEngine from './index.js';
+import getRandomInt from '../utils/utils.js';
+import runEngine from '../index.js';
+import { primeStartMessage } from '../utils/constants.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -20,4 +21,4 @@ const genRoundData = () => {
   return { correctAnswer, question };
 };
 
-export default () => runEngine(genRoundData, 'Answer "yes" if given number is prime. Otherwise answer "no".');
+export default () => runEngine(genRoundData, primeStartMessage);

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import greatings from '../src/sli.js';
+import greatings from '../src/games/сli.js';
 
 greatings();

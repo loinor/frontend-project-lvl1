@@ -1,5 +1,6 @@
-import getRandomInt from './utils.js';
-import runEngine from './index.js';
+import getRandomInt from '../utils/utils.js';
+import runEngine from '../index.js';
+import { evenStartMessage } from '../utils/constants.js';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -10,4 +11,4 @@ const genRoundData = () => {
   return { correctAnswer, question };
 };
 
-export default () => runEngine(genRoundData, 'Answer "yes" if the number is even, otherwise answer "no".');
+export default () => runEngine(genRoundData, evenStartMessage);

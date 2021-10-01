@@ -1,5 +1,6 @@
-import getRandomInt from './utils.js';
-import runEngine from './index.js';
+import getRandomInt from '../utils/utils.js';
+import runEngine from '../index.js';
+import { progressionStartMessage } from '../utils/constants.js';
 
 const creatProgression = (firstNum, difference, lengthProgression) => {
   const progression = [];
@@ -27,4 +28,4 @@ const genRoundData = () => {
   return { correctAnswer, question };
 };
 
-export default () => runEngine(genRoundData, 'What number is missing in the progression?');
+export default () => runEngine(genRoundData, progressionStartMessage);

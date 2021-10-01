@@ -1,5 +1,6 @@
-import getRandomInt from './utils.js';
-import runEngine from './index.js';
+import getRandomInt from '../utils/utils.js';
+import runEngine from '../index.js';
+import { gcdStartMessage } from '../utils/constants.js';
 
 const gcd = (num1, num2) => {
   const minNum = Math.min(num1, num2);
@@ -19,4 +20,4 @@ const genRoundData = () => {
   return { correctAnswer, question };
 };
 
-export default () => runEngine(genRoundData, 'Find the greatest common divisor of given numbers.');
+export default () => runEngine(genRoundData, gcdStartMessage);
